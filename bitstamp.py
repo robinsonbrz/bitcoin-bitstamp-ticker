@@ -1,13 +1,11 @@
 import time
-import datetime
 import ssl
 import websocket
 import json
 
 
-
 def fixed_width_string(rec_string):
-    WIDTH = 15
+    WIDTH = 14
     lenght = len(str(rec_string))
     ret_string = str(rec_string)
 
@@ -27,7 +25,8 @@ def on_message(ws, message):
 
     if len(mensagem["data"]) == 0:
         print("______________________________________________________________________________________")
-        print(f'{fixed_width_string("Trade pair")}{fixed_width_string("Price")}{fixed_width_string("Quantity")}{fixed_width_string("Timestamp")}{fixed_width_string("Transaction")}|')
+        print(f'{fixed_width_string("Trade pair")}{fixed_width_string("Price")}'
+              f'{fixed_width_string("Quantity")}{fixed_width_string("Timestamp")}{fixed_width_string("Transaction")}|')
         print("______________________________________________________________________________________")
 
     else:
@@ -36,10 +35,7 @@ def on_message(ws, message):
         amount = mensagem["data"]["amount_str"]
         transaction = mensagem["data"]["id"]
 
-        timestamp = int( mensagem["data"]["timestamp"])
-
-
-
+        timestamp = int(mensagem["data"]["timestamp"])
 
         date = time.strftime("%D %H:%M", time.localtime(timestamp))
         print(f'{fixed_width_string(trade_pair)}{fixed_width_string(price)}{fixed_width_string(amount)}{fixed_width_string(date)}{fixed_width_string(transaction)}|')
