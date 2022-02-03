@@ -7,7 +7,7 @@ import json
 
 
 def fixed_width_string(rec_string):
-    WIDTH = 15
+    WIDTH = 14
     lenght = len(str(rec_string))
     ret_string = str(rec_string)
 
