@@ -5,6 +5,9 @@ import websocket
 import json
 
 
+def exibe():
+    pass
+
 
 def fixed_width_string(rec_string):
     WIDTH = 15
