@@ -1,4 +1,4 @@
-#Reads bitcoin ticker from Bitstamp.net Websocket API
+# Reads bitcoin ticker from Bitstamp.net Websocket API
 
 This program uses the API provided by bitstamp.net, to retrive bitcoin ticker  
 Based on project 05 - SOLYD Python training 
@@ -12,7 +12,7 @@ Based on project 05 - SOLYD Python training
 However, it was decided to implementing the Websocket API provided by bitstamp
 Bitstam Websocket docs: https://www.bitstamp.net/websocket/v2/
 
-#In order to instal the lybraries Please run 
+# In order to instal the lybraries please run 
 pip install -r .\requirements.txt  
 - python 3.9.7  
 - Websocket library:  "https://pypi.org/project/websocket-client/"  
