@@ -15,4 +15,6 @@ Bitstam Websocket docs: https://www.bitstamp.net/websocket/v2/
 #In order to instal the lybraries Please run 
 pip install -r .\requirements.txt  
 - python 3.9.7  
-- Websocket library:  "https://pypi.org/project/websocket-client/"
+- Websocket library:  "https://pypi.org/project/websocket-client/"  
+pip install BitstampClient
+- https://github.com/kmadac/bitstamp-python-client
